@@ -8,16 +8,18 @@
 </head>
 <body>
     <form action="" method ="POST">
-        <label for="Cname">
+        {% csrf_token %}
+
+        <label for="Cmpname">
           Company Name
         </label>
     
-        <input type="text" id="Cname" name="Cname" />
+        <input type="text" id="Cname" name="Cmpname" />
         <br/><br/>
-        <label for="Fcolor">
+        <label for="Colname">
             Choose color
           </label>
-          <input type="color" name="Cname">
+          <input type="color" name="Colname">
         <input type="submit" value="Submit" />
     </form>
 </body>
